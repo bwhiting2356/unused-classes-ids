@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Unused ID's and Classes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="cssparser.js" defer></script>
+  <script type="text/javascript" src="find_strays.js" defer></script>
+</head>
+  <body>
+    <div id="wrapper">
+      <h1>Unused ID's and Classes</h1>
+      <p>Check to see if you have any id's or classes in your html markup with no corresponding css selector.</p>
+      <form>
+        <div id="css" class="input-div">
+          <label class="label" for="css-input">Paste your CSS below:</label>
+          <textarea id="css-input" class="input"></textarea>
+        </div>
+        <div id="html" class="input-div">
+          <label class="label" for="html-input">Paste your HTML below:</label>
+          <textarea id="html-input" class="input"></textarea>
+        </div>
+        <div id="button">Search</div>
+      </form>
+      <p>Results:</p>
+      <div id="output">
+      </div>
+    </div>
+  </body>
+</html>

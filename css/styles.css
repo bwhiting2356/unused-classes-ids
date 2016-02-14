@@ -1,0 +1,86 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    #wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .input-div {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 7.5px);
+    }
+
+    .input-div:first-child {
+        margin-right: 15px;
+    }
+
+    form div {
+        margin-top: 10px;
+    }
+
+    #button {
+        background: blue;
+        color: white;
+        width: 300px;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        margin: 15px auto;
+        transition: all 0.3s;
+    }
+
+    #button:hover {
+        cursor: pointer; 
+        opacity: 0.75;
+    }
+
+    textarea {
+        resize: none;
+        height: 150px;
+        width: 100%;
+        padding: 10px;
+        margin-right: 15px;
+    }
+
+    #output {
+        border: 1px solid grey;
+        min-height: 200px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    .list {
+        font-style: italic;
+    }
+
+    @media screen and (max-width: 500px) {
+        .input-div {
+            width: 100%;
+        }
+
+        .input-div:first-child {
+            margin-right: 0;
+        }
+
+        #button {
+            width: 70%;
+        }
+
+        #wrapper {
+            width: 90%;
+        }
+    }
